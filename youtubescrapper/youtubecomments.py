@@ -71,4 +71,8 @@ def scrape(no_of_video: int, len_to_scroll = 5000):
     my_data_youtube = pd.DataFrame(
         {'title': new_list_title, "url": new_list_url, "views": new_list_views, "upload": new_list_upload})
     return my_data_youtube
-    driver.close
+    driver.close()
+  
+
+k = scrape(50)
+print(k)
